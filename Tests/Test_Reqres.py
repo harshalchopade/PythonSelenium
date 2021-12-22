@@ -1,5 +1,5 @@
 from Pages.GooglePage import GooglePage
-import TestBase
+from Tests.TestBase import TestBase
 
 class Test_Reqres(TestBase):
     def test_google_enter_search_key(self):
