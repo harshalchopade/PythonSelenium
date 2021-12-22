@@ -11,6 +11,7 @@ jobs:
       - run: pip install --user selenium
       - run: pip install --user requests
       - run: python3 ./Pages/*
+      - run: python3 ./Config/*
 
   test:
     working_directory: ~/circleci-python
@@ -21,9 +22,9 @@ jobs:
       - run: pip install --user selenium
       - run: pip install --user requests
       - run: python3 ./Pages/BasePage.py
+      - run: python3 ./Config/TestData.py
       - run: python3 ./Pages/GooglePage.py
       - run: python3 ./Pages/ReqresPage.py
-      - run: python3 ./Config/TestData.py
       - run: python3 ./Tests/Test_Reqres.py
 
 workflows:
