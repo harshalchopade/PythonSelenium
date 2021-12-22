@@ -18,6 +18,7 @@ jobs:
       - image: "circleci/python:3.6.4"
     steps:
       - checkout
+      - run: python3 ./Pages/*
       - run: python3 ./Tests/Test_Reqres.py
 
 workflows:
