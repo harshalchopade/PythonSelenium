@@ -18,6 +18,8 @@ jobs:
       - image: "circleci/python:3.6.4"
     steps:
       - checkout
+      - run: pip install --user selenium
+      - run: pip install --user requests
       - run: python3 ./Pages/*
       - run: python3 ./Tests/Test_Reqres.py
 
