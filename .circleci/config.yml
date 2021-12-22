@@ -10,8 +10,6 @@ jobs:
       - run: pip install --user pytest
       - run: pip install --user selenium
       - run: pip install --user requests
-      - run: python3 ./Pages/*.py
-      - run: python3 ./Config/*.py
 
   test:
     working_directory: ~/circleci-python
