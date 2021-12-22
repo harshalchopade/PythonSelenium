@@ -7,7 +7,7 @@ jobs:
       - image: "circleci/python:3.6.4"
     steps:
       - checkout
-      - run: pip install --upgrade pip
+      - run: pip install --user pytest
       - run: pip install selenium
       - run: python3 ./Pages/BasePage.py
   test:
