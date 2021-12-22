@@ -8,7 +8,7 @@ jobs:
     steps:
       - checkout
       - run: pip install --user pytest
-      - run: pip install selenium
+      - run: pip install --user selenium
       - run: python3 ./Pages/BasePage.py
   test:
     working_directory: ~/circleci-python
