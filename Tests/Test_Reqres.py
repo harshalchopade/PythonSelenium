@@ -1,5 +1,3 @@
-from requests import request
-
 from Tests.TestBase import TestBase
 from Pages.GooglePage import GooglePage
 
