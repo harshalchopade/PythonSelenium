@@ -11,6 +11,7 @@ jobs:
       - run: pip install --user selenium
       - run: pip install --user requests
       - run: python3 ./Pages/BasePage.py
+      - run: python3 ./Pages.GooglePage.py
   test:
     working_directory: ~/circleci-python
     docker:
