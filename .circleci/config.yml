@@ -23,6 +23,7 @@ jobs:
       - run: python3 ./Pages/BasePage.py
       - run: python3 ./Pages/GooglePage.py
       - run: python3 ./Pages/ReqresPage.py
+      - run: python3 ./Config/TestData.py
       - run: python3 ./Tests/Test_Reqres.py
 
 workflows:
