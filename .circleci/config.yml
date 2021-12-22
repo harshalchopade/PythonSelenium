@@ -9,6 +9,8 @@ jobs:
       - checkout
       - run: pip install --user pytest
       - run: pip install --user selenium
+      - run: pip install --user requests
+      - run: pip install --user json
       - run: python3 ./Pages/BasePage.py
   test:
     working_directory: ~/circleci-python
