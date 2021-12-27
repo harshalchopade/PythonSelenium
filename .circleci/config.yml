@@ -5,7 +5,7 @@ jobs:
     working_directory: ~/circleci-python
     environment:
       PYTHONPATH = ../Config
-      PYTHONPATH = ../Pages
+      PYTHONPATH = ../Pages/GooglePage
     docker:
       - image: "circleci/python:3.6.4"
     steps:
