@@ -14,6 +14,7 @@ jobs:
       - run: pip install --user requests
   test:
     working_directory: ~/circleci-python
+    PYTHONPATH: /root/QA_Assignment/:/root/QA_Assignment/Pages/:/root/QA_Assignment/Tests/
     docker:
       - image: "circleci/python:3.6.4"
     steps:
