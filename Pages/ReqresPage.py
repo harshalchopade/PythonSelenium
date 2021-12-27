@@ -1,7 +1,6 @@
 import json
 import requests
 from selenium.webdriver.common.by import By
-from Config.TestData import TestData
 from Pages.BasePage import BasePage
 
 class ReqresPage(BasePage):

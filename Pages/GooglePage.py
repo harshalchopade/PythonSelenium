@@ -1,6 +1,5 @@
 import time
 from selenium.webdriver.common.by import By
-from Config.TestData import TestData
 from Pages.BasePage import BasePage
 from Pages.ReqresPage import ReqresPage
 
