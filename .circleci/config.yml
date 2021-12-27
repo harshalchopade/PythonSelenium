@@ -9,7 +9,6 @@ jobs:
       - image: "circleci/python:3.6.4"
     steps:
       - checkout
-      - python/install-deps
       - run: pip install --user pytest
       - run: pip install --user selenium
       - run: pip install --user requests
