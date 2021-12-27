@@ -4,7 +4,7 @@ jobs:
   build:
     working_directory: ~/circleci-python
     environment:
-      PYTHONPATH = ../Pages
+      PYTHONPATH: /root/QA_Assignment/:/root/QA_Assignment/Pages/:/root/QA_Assignment/Tests/
     docker:
       - image: "circleci/python:3.6.4"
     steps:
@@ -12,12 +12,8 @@ jobs:
       - run: pip install --user pytest
       - run: pip install --user selenium
       - run: pip install --user requests
-      - run: python -c "import sys; print(sys.path)"
-
   test:
     working_directory: ~/circleci-python
-    environment:
-      PYTHONPATH = ../Pages
     docker:
       - image: "circleci/python:3.6.4"
     steps:
