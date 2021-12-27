@@ -23,7 +23,6 @@ jobs:
       - checkout
       - run: pip install --user selenium
       - run: pip install --user requests
-      - run: python3 PYTHONPATH/GooglePage.py
       - run: python3 ./Tests/Test_Reqres.py
 
 workflows:
