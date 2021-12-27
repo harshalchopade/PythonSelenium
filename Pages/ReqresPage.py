@@ -1,6 +1,7 @@
 import json
 import requests
 from selenium.webdriver.common.by import By
+from Config.TestData import TestData
 from Pages.BasePage import BasePage
 
 class ReqresPage(BasePage):
@@ -18,7 +19,7 @@ class ReqresPage(BasePage):
     #Actions
     def verifyPageTitle(self):
         actual_title = self.get_page_title()
-        assert actual_title == "Reqres - A hosted REST-API ready to respond to your AJAX requests"
+        assert actual_title == TestData.EXPECTED_TITLE_REQRES
 
     # def verifySubtitlePresent(self):
     #     self.scroll_to_element(self.subtitle)

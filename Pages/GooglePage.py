@@ -1,5 +1,6 @@
 import time
 from selenium.webdriver.common.by import By
+from Config.TestData import TestData
 from Pages.BasePage import BasePage
 from Pages.ReqresPage import ReqresPage
 
@@ -15,7 +16,7 @@ class GooglePage(BasePage):
 
     #Actions
     def sendkeys_and_enter(self):
-        self.do_sendKeys(self.search_field, "reqres")
+        self.do_sendKeys(self.search_field, TestData.SEARCH_KEY)
         self.press_enter_key(self.search_field)
         self.do_click(self.link)
         return ReqresPage(self.driver)
