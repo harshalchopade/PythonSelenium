@@ -16,7 +16,7 @@ class GooglePage(BasePage):
 
     #Actions
     def sendkeys_and_enter(self):
-        self.do_sendKeys(self.search_field, TestData.SEARCH_KEY)
+        self.do_sendKeys(self.search_field, "reqres")
         self.press_enter_key(self.search_field)
         self.do_click(self.link)
         return ReqresPage(self.driver)
