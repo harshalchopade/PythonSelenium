@@ -12,6 +12,7 @@ jobs:
       - run: pip install --user pytest
       - run: pip install --user selenium
       - run: pip install --user requests
+      - run: python -c "import sys; print(sys.path)"
 
   test:
     working_directory: ~/circleci-python
